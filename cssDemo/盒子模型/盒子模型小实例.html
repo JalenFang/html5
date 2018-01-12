@@ -1,0 +1,45 @@
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>盒子模型小实例</title>
+    <style type="text/css">
+        input {
+            border: none; /*取消表单边框*/
+            outline-style: none; /*取消表单轮廓线*/
+        }
+
+        .userName {/*用户表单的默认样式*/
+            border: 1px solid black;
+            background-color: yellowgreen;
+        }
+
+        .userName:focus {/*用户表单获取焦点的样式*/
+            background-color: yellow;
+        }
+
+        .email {
+            border-bottom: 1px dotted red;
+        }
+
+        .search {
+            border: 1px solid black;
+            background-repeat: no-repeat;
+            background-position: left;
+        }
+    </style>
+</head>
+<body>
+<!--本示例中为使得点击表单前的文字的效果等同于点击input本身，
+故将文字置于<label></label>中；且将label的for属性的设置为input标签的id-->
+<label for="uid">用户: </label>
+<input type="text" class="userName" id="uid">
+<br>
+<br>
+<label for="eid">邮箱: </label>
+<input type="text" class="email" id="eid">
+<br>
+<br>
+<label for="sid">搜索: </label>
+<input type="text" class="search" id="sid">
+</body>
+</html>

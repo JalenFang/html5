@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        id选择器
+    </title>
+
+    <style type="text/css">
+        #name {
+            font-size: 40px;
+            color: white;
+            width: 450px;
+            height: 50px;
+            background-color: red;
+        }
+
+        #jalen {
+            font-size: 40px;
+            color: white;
+            width: 450px;
+            height: 50px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+<p id="name">
+    hello world
+</p>
+<p id="jalen">
+    哈哈哈哈哈哈哈哈！！！
+</p>
+</body>
+</html>

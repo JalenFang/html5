@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow实例</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 50px;
+            width: 350px;
+            height: 100px;
+            border: 1px solid red;
+            overflow: visible;
+
+            /* overflow: visible
+             visible为overflow属性的默认值。使用该值后，假若元素中内容过多，这些内容不会被修剪，会在元素之外显示
+
+             overflow: hidden
+             使用该值后，假若元素中内容过多，超出部分将被隐藏
+
+             overflow: auto
+             使用该值后，假若元素中内容过多，那么系统会为元素设置滚动条；
+             假若内容不够多并没有超出元素，那么系统不会为元素设置滚动条。所以，在实际开发中多采用该属性。
+
+             overflow: scroll
+             使用该值后，不论元素中内容是否超出元素的大小，系统都会为元素设置滚动条
+             */
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>锄禾</p>
+    <p>作者 李绅</p>
+    <p>锄禾日当午</p>
+    <p>汗滴禾下土</p>
+    <p>谁知盘中餐</p>
+    <p>粒粒皆辛苦</p>
+</div>
+</body>
+</html>

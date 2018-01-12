@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        常用标签
+    </title>
+</head>
+
+<body>
+
+<!--p标签表示一个段落-->
+<p>
+    hello world
+</p>
+
+<!--
+h标签表示标题 h标签细分为h1~h6，h后的数字越大，那么标题所对应的字体越小
+-->
+<h1>h1标题</h1>
+<h2>h2标题</h2>
+<h3>h3标题</h3>
+<h4>h4标题</h4>
+<h5>h5标题</h5>
+<h6>h6标题</h6>
+
+<!--hr标签用于表示一条水平横线-->
+<hr>
+
+<!--br标签用于表示换行-->
+abcdef<br>
+ghigk<br>
+
+<!--nobr标签 表示不换行-->
+<nobr>这里是一个很长的数学公式，不能换行显示，只能在一行显示。这里是一个很长的数学公式，不能换行显示，只能在一行显示。这里是一个很长的数学公式，不能换行显示，只能在一行显示。这里是一个很长的数学公式，不能换行显示，只能在一行显示。
+</nobr>
+
+<!--center标签-->
+<center>测试居中</center>
+
+<!--marquee标签 表示跑马灯效果-->
+<marquee behavior="scroll" direction="left">
+    测试marquee标签
+</marquee>
+
+<!--button标签 -->
+<button type="button" onclick="onButtonClick()">请点击我吧</button>
+<script type="text/javascript">
+    function onButtonClick() {
+        alert("button被点击了")
+    }
+</script>
+
+<!--a标签在THML中常用于表示锚点和超链接   target属性表示打开超链接的方式。如果target的取值为_blank表示在新窗口中打开超链接；假若target的取值为_self表示在当前窗口中打开超链接。-->
+<a href="http://blog.csdn.net/lfdfhl" title="测试a标签" target = "_blank"> 请点击超链接</a>
+
+<!--img标签在HTML中常用于表示图像-->
+<img src="myblog.jpg" title="这是我的博客头像">
+
+</body>
+</html>

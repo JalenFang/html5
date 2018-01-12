@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+
+    <!--  css3的新特性 有兼容性问题-->
+
+    <style>
+        li:first-child {/*改变第一个孩子*/
+            color: pink;
+        }
+
+        li:nth-child(4) { /*选择的第四个孩子*/
+            color: skyblue;
+        }
+
+        li:last-child {/*改变最后一个孩子的样式*/
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>第一个孩子</li>
+    <li>第二个孩子</li>
+    <li>第三个孩子</li>
+    <li>第四个孩子</li>
+    <li>第五个孩子</li>
+    <li>第六个孩子</li>
+</ul>
+</body>
+</html>

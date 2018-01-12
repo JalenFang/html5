@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+
+    <!--  css3的新特性 有兼容性问题-->
+
+    <style>
+
+        /* li:nth-child(odd) { !*选择所有的偶数*!
+             color: skyblue;
+         }*/
+
+        /*  li:nth-child(even) { !*选择所有的奇数*!
+              color: skyblue;
+          }*/
+
+        /*  li:nth-child(n) { !*选择n从零开始*!
+              color: red;
+          }*/
+
+        /* li:nth-child(2n) { !*选择偶数*!
+             color: red;
+         }*/
+
+        /* li:nth-child(2n+ 1) {!*选择奇数*!
+             color: red;
+         }*/
+
+     /*   li:nth-child(3n) { !*选择3的倍数*!
+            color: red;
+        }*/
+
+        /*  因此nth-child标签比较灵活 自由配置*/
+
+        li:nth-last-child(2n) { /*倒数 从后往前 选中偶数*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>第一个孩子</li>
+    <li>第二个孩子</li>
+    <li>第三个孩子</li>
+    <li>第四个孩子</li>
+    <li>第五个孩子</li>
+    <li>第六个孩子</li>
+</ul>
+</body>
+</html>

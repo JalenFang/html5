@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        伪类
+    </title>
+
+    <style type="text/css">
+
+      /*  link  visited hover active 顺序不能乱  谐音 LV 包包 hao 有助于记忆*/
+        /*设置了超链接的颜色*/
+        a:link {
+            color: gray;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /*设置超链接访问过后的样式*/
+        a:visited {
+            color: orange;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        /*设置鼠标放到超链接上时的样式*/
+        a:hover {
+            color: red;
+            text-decoration: underline;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        /*设置超链接被点击瞬间的样式  按住鼠标不松开*/
+        a:active {
+            color: green;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+
+<body>
+<a href="#">秒杀</a>
+</body>
+</html>
