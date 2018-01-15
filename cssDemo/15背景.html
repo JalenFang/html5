@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        div {
+            background-color: pink; /*背景颜色*/
+            width: 500px;
+            height: 500px;
+            background-image: url(../img/liu.jpg); /*背景图片*/
+            background-repeat: no-repeat;
+            /*背景图片的平铺样式  no-repeat 不平铺；
+                       repeant-x 横向平铺 ；repeant-y 纵向平铺 ；repeant 横向和纵向都平铺*/
+
+            /*利用方位名次进行更改背景图片的位置  left top 默认值  如果只写一个 另一个默认是center*/
+            /*  background-position: center center;*/
+            /* background-position: 10px 20px; !*精确坐标 第一个值是X坐标 第二个值是Y坐标*!*/
+            background-position: center -25px; /*也可以混搭*/
+            background-attachment: scroll;
+            /*scroll 背景图像随着对象内容的滚动而滚动 fixed背景图片固定*/
+
+            /*  background-size: 100px 100px ; 指定背景图片的宽度和高度*/
+            /*background-size: 100px; 指定背景图片的宽度 高度等比例缩放*/
+            /* background-size: 50%; 背景图片缩小到原来的一半*/
+            background-size: cover; /*图片进行等比例缩放 图片一定要保证宽度和高度同时满足盒子的大小 势必会有部分超出去 看不见*/
+            /*background-size: contain;*/ /*图片进行等比例缩放 如果图片的高度或者宽度有一个和盒子一样大 就不在进行缩放 这样做的好处就保证了图片的完整 不会有缺失的部分*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
