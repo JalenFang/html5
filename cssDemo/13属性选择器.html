@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>/*属性选择器用中括号来表示*/
+    a[title] { /*E[attr]*/ /*第一种*/
+        color: red;
+    }
+
+    input[type = text] { /*E[attr = value]*/ /*第二种*/
+        color: red;
+    }
+
+    div[class ^= font] { /* E[attr ^= value] 第三种 只要 attr的值包含value并且以value开始即可*/
+        color: red;
+    }
+
+    div[class $= footer] { /* E[attr ^= value] 第四种 只要 attr的值包含value并且以value结尾即可*/
+        color: orange;
+    }
+
+    div[class *= tao] { /* E[attr ^= value] 第五种 只要 attr的值包含value即可*/
+        color: green;
+    }
+
+    </style>
+</head>
+<body>
+<a href="#" title="我是百度">百度</a>
+<a href="#">新浪</a>
+<a href="#">土豆</a>
+
+<input type="text" value="文本框">
+<input type="text" value="文本框">
+<input type="submit">
+<input type="reset">
+
+<div class="font12">属性选择器</div>
+<div class="font24">属性选择器</div>
+<div class="font36">属性选择器</div>
+<div class="a">属性选择器</div>
+<div class="sub_footer">属性选择器</div>
+<div class="jin_footer">属性选择器</div>
+<div class="new-tao-a">属性选择器</div>
+<div class="haha-tao-footer">属性选择器</div>
+</body>
+</html>
