@@ -6,9 +6,17 @@
     </title>
 
     <style type="text/css">
-        /* 后代选择器强调的是嵌套*/
+        /* 后代选择器强调的是嵌套  中间需要一个空格*/
         p welcome {
             font-size: 40px;
+            color: red;
+        }
+
+        div p {
+            font-size: 20px;
+        }
+
+        .junjie p {
             color: red;
         }
     </style>
@@ -19,6 +27,18 @@
     欢迎访问我的博客
     <welcome>一起交流开发技术</welcome>
 </p>
+
+<div>
+    <p>
+        周杰伦
+    </p>
+</div>
+
+<div class="junjie">
+    <p>
+        林俊杰
+    </p>
+</div>
 
 
 </body>
