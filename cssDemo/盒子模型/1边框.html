@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        边框
+    </title>
+
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border-width: 2px;
+            border-style: dashed; /*none 没有边框； dashed 虚线 ； solid 实线 ；dotted 点线；double 双实线*/
+            border-color: red;
+            border-top-color: green;
+            border-bottom: 1px solid black;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .user {
+            border-width: 1px;
+            border-color: pink;
+            border-style: solid;
+        }
+
+        .nickname {
+            border-top-width: 1px;
+            border-top-color: red;
+            border-top-style: dashed;
+        }
+
+        .password {
+            /*宽度 样式 颜色  综合性写法*/
+            border-top: 1px solid red;
+            border-bottom: 2px dashed orange;
+        }
+
+        /*宽度 样式 颜色  综合性写法*/
+        .phone {
+            border: 3px solid skyblue;
+            border-radius: 10px;
+            /*10px的弧度 一个数值表示四个角都是弧度的
+                    border-radius: 10px 40px;   两个值 左上角和右下角是10px 右上角和左下角是40px 对角线关系
+
+                     border-radius: 10px 40px 80px;   左上角是10px 右上角和左下角是40px 右下角是80px
+
+                     border-radius: 10px 40px 80px 100px;  左上角是10px 右上角40px 左下角80px 右下角是100px
+                       */
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <p>学而不思则罔</p>
+    <p>思而不学则殆</p>
+</div>
+用户名:<input type="text" class="user"><br/><br/>
+昵称：<input type="text" class="nickname"><br/><br/>
+密码：<input type="text" class="password"><br/><br/>
+手机：<input type="text" class="phone"><br/><br/>
+
+</body>
+</html>
