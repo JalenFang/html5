@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+    <style>
+        * { /*清空默认的内外边距 几乎是我们写css第一步要写的*/
+            margin: 0;
+            padding: 0;
+        }
+
+        .top, .banner, .main, .footer { /*并集选择器使用于选择器相同的属性*/
+            width: 960px;
+            margin: 0 auto; /*让盒子居中对齐 只要保证 上下无所谓 左右auto就可以了*/
+            margin-bottom: 10px;
+            text-align: center; /*让文字居中对齐*/
+            border: 1px dashed gray;
+        }
+
+        .top {
+            height: 80px;
+            background-color: pink;
+        }
+
+        .banner {
+            height: 120px;
+            background-color: purple;
+        }
+
+        .main {
+            height: 500px;
+            background-color: hotpink;
+        }
+
+        .footer {
+            height: 150px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--.top + .banner + .main + footer-->
+<div class="top">top</div>
+<div class="banner">banner</div>
+<div class="main">main</div>
+<div class="footer">footer</div>
+</body>
+</html>
