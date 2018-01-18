@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html标签</title>
+    <base target="_blank">
+</head>
+<body>
+
+<strong>1.p标签<br/></strong>
+<p>p标签表示一个段落</p>
+
+<hr/>
+
+<strong>2.img标签 图片<br/></strong>
+src图片的路径<br/>
+title鼠标悬停的时候显示的文本描述<br/>
+width图片的宽度<br/>
+height图片的宽度<br/>
+alt图片加载不出来的描述<br/>
+<img src="pic/dog1.jpeg" title="小狗" width="230" height="219"><br/>
+
+<hr/>
+
+<strong>3.a标签 链接 </strong><br/>
+href要跳转到的网址 如果他的值为#表示空链接<br/>
+target 以什么样的方式打开 -self在自己的窗口打开 -blank在新窗口打开<br/>
+锚点可以实现快速定位 href的值 #id就可以啦<br/>
+<a href="https://baidu.com" target=_self>百度</a>
+<a href="https://qq.com">QQ</a>
+
+<hr/>
+
+<strong>4.base标签 使用的位置head标签内部 可以指定整个a标签的target值为一个</strong>
+
+<hr/>
+
+<strong>5.ul 无序列表</strong><br/>
+<ul>
+    <li>列表项一</li>
+    <li>列表项二</li>
+    <li>列表项三</li>
+</ul>
+
+<hr/>
+
+<strong>6.ol 有序列表</strong> <br/>
+<ol>
+    <li>美国</li>
+    <li>英国</li>
+    <li>中国</li>
+</ol>
+
+<hr/>
+
+<strong>7.自定义列表 dl dt dd</strong> <br/>
+
+<dl>
+    <dt>河南</dt>
+    <dd>郑州</dd>
+    <dd>南阳</dd>
+</dl>
+<dl>
+    <dt>广东</dt>
+    <dd>广州</dd>
+    <dd>深圳</dd>
+</dl>
+
+<hr/>
+
+<strong>8.表格 table tr td</strong><br/>
+border设置边框的大小<br/>
+cellspacing设置单元格和边框的距离<br/>
+cellpadding 设置单元格内容距离边框的距离<br/>
+align设置表格水平的对齐方式  left right center<br/>
+表头标签 th 可以实现表头加粗居中<br/>
+thead 表示表格头标签  tbody表示表格内容标签<br/>
+caption表格的标题<br/>
+rowspan 跨行合并单元格<br/>
+colsapn跨列合并单元格
+<table width="300" height="300" border="1" cellspacing="0" cellpadding="0" align="center">
+    <caption>户口调查表</caption>
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>房建龙</td>
+        <td rowspan="2">男</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <td>曹延平</td>
+        <td>27</td>
+    </tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<strong>9.input 输入框</strong>
+type可以指定数据框类型<br/>
+text 文本框 <br/>
+password 密码框 <br/>
+radio 单选框 <br/>
+checkbox 复选框 <br/>
+默认被选中 checked <br/>
+button 按钮  value 显示的文本值<br/>
+submit 提交表单 <br/>
+reset 重置表单 <br/>
+image 图像形式的提交按钮 <br/>
+file 上传图像 <br/>
+maxlength 最大的字符数 <br/>
+
+账号 ：<input type="text" value="默认文本值"><br/>
+密码 ：<input type="password" maxlength="6">  <br/>
+性别: <input type="radio" name="sex" checked  = "checked"/>男
+<input type="radio" name="sex">女 <br/>
+爱好:<input  type="checkbox" name="hobby"/>足球
+<input   type="checkbox" name="hobby"/> 篮球 <br/>
+<input type="button" value="搜索"/><br/>
+
+<input type="submit" > <br/>
+
+<input type="reset"> <br/>
+
+<input type="image" src="pic/dog2.jpeg"> <br/>
+
+<input type="file">
+
+<hr/>
+
+<strong>10.label标签 配合input标签使用</strong> <br/>
+点击账号 input标签也可以获取到焦点
+<label> 账号: <input type="text"></label> <br/>
+
+label 包裹到两个input标签 可以指定id实现绑定 <br/>
+<label for="two"> 账号：<input type="text"> <br/>   密码: <input type="password" id="two"></label>
+
+<hr/>
+
+<strong>11.textarea 文本域 可以实现评论 输入多行文本</strong> <br/>
+<textarea name="评论"  cols="30" rows="10">请输入评论内容</textarea>
+
+<hr/>
+
+<strong>12.select 下拉选择框</strong> <br/>
+selcted 默认选择 <br/>
+籍贯:
+<select >
+    <option selected ="selected">河南</option>
+    <option >广东</option>
+    <option >湖北</option>
+    
+</select>
+
+<hr/>
+
+<strong>13.form  表单域 </strong> <br/>
+
+
+
+</body>
+</html>
