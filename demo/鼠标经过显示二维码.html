@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标经过显示二维码</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+        }
+
+        div img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: 110px;
+            display: none; /*隐藏二维码*/
+        }
+
+        div:hover img { /*鼠标经过div的时候 div里面的二维码显示出来*/
+            display: block; /*显示二维码*/
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    扫二维码
+    <img src="../img/liu.jpg" width="100" height="100"/>
+</div>
+</body>
+</html>
