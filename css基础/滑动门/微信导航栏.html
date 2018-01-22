@@ -34,7 +34,7 @@
         .nav li a {
             display: block;
             height: 33px;
-            background: url("../../img/weixin_slide_door.png") no-repeat;
+            /*  background: url("../../img/weixin_slide_door.png") no-repeat;*/
             color: white;
             font-size: 14px;
             line-height: 33px; /*垂直居中*/
@@ -44,8 +44,24 @@
         .nav li a span {
             display: block;
             line-height: 33px;
-            background: url("../../img/weixin_slide_door.png") no-repeat right;
+            /* background: url("../../img/weixin_slide_door.png") no-repeat right;*/
             padding-right: 15px;
+        }
+
+        .nav li:first-child a {
+            background: url("../../img/weixin_slide_door.png") no-repeat;
+        }
+
+        .nav li:first-child a span {
+            background: url("../../img/weixin_slide_door.png") no-repeat right;
+        }
+
+        .nav li a:hover {
+            background: url("../../img/weixin_slide_door.png") no-repeat;
+        }
+
+        .nav li a:hover span { /*鼠标放在a下的span */
+            background: url("../../img/weixin_slide_door.png") no-repeat right;
         }
     </style>
 </head>
