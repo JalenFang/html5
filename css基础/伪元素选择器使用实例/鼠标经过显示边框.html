@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示边框</title>
+    <style>
+        div {
+            width: 173px;
+            height: 220px;
+            margin: 100px auto; /*左右auto 水平居中 必须制定宽高*/
+            position: relative;/*子绝父相原则*/
+        }
+
+        div:hover::after {/*鼠标经过之后 在添加一个盒子边框*/
+            display: block;/*行内元素转换成块级元素*/
+            content: "";
+            width: 100%;/*宽高和父元素相同*/
+            height: 100%;
+            border: 10px solid rgba(255, 255, 255, .3);
+            box-sizing: border-box;/*把边框算到宽高里面*/
+            position: absolute; /*absolute 绝对定位不占空间  但是遵循子绝父相原则*/
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="../../img/liuXiao.jpg">
+</div>
+</body>
+</html>
