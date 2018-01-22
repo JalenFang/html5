@@ -25,14 +25,27 @@
             height: 75px;
         }
 
+        .nav li {
+            float: left; /*a span 没有宽度 默认通栏显示 因此增加浮动*/
+            margin: 0 10px; /*上下margin 0  左右10像素*/
+            padding-top: 21px;
+        }
+
         .nav li a {
             display: block;
             height: 33px;
             background: url("../../img/weixin_slide_door.png") no-repeat;
-            color:white;
+            color: white;
             font-size: 14px;
-            line-height: 33px;
+            line-height: 33px; /*垂直居中*/
             padding-left: 15px;
+        }
+
+        .nav li a span {
+            display: block;
+            line-height: 33px;
+            background: url("../../img/weixin_slide_door.png") no-repeat right;
+            padding-right: 15px;
         }
     </style>
 </head>
@@ -42,6 +55,24 @@
         <li>
             <a href="#">
                 <span>首页</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span>帮助与反馈</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span>公众平台</span>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span>开放平台</span>
             </a>
         </li>
     </ul>
