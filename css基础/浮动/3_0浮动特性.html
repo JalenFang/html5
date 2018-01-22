@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动特性</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+            border: 10px solid red;
+            padding: 10px;
+        }
+        /*浮动会找离自己最近的父元素对齐 但是不会压到 边框和内边距*/
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

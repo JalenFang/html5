@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动初体验</title>
+    <style>
+        div {
+            /* display: inline-block; *//*这个属性可以把div转换为行内块元素 但是致命的缺点是元素之间有空隙 不方便布局*/
+            float: left; /*float 左侧浮动 默认值是left 有三个值 left right none  飘在标本流的上面*/
+            /*   子孩子的浮动不会压到父标签的padding和margin值*/
+            /*浮动的目的是让多个块级元素在一行显示 中间没有空隙*/
+        }
+
+        div:first-child {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        div:last-child {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+</body>
+
+</html>
