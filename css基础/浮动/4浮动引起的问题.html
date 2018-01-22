@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动引起的问题</title>
+    <style>
+        .box1 {
+            width: 400px;
+            background-color: pink;
+        }
+
+        .son1 {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            float: left;
+        }
+
+        .son2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            float: right;
+        }
+       /* 浮动引起的问题， 父盒子box1没有指定高度，子盒子son1,son2浮动了,不占有位置，父亲又没有高度
+       那么下面的盒子box2会自动上来，无法完全显示*/
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="son1"></div>
+    <div class="son2"></div>
+</div>
+
+<div class="box2"></div>
+</body>
+</html>

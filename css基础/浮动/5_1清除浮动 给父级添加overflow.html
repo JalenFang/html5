@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style>
+        .box1 {
+            width: 400px;
+            background-color: pink;
+            overflow: hidden;/*触发BFC 可以清除浮动*/
+        }
+
+        .son1 {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            float: left;
+        }
+
+        .son2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            float: right;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="son1"></div>
+    <div class="son2"></div>
+</div>
+
+<div class="box2"></div>
+</body>
+</html>

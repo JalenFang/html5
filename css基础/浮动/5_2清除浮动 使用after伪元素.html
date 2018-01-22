@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清除浮动</title>
+    <style>
+        /* 额外标签法升级版*/
+        .clearfix:after {
+            display: block;
+            content: "."; /*内容随便写 尽量不要空 繁殖旧版本浏览器有空隙*/
+            height: 0;
+            visibility: hidden; /*因为有content有个点 因此需要隐藏*/
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;/* *代表ie6，7能识别的特殊符号 只有这两个才执行  zoom是ie 6 7清除浮动的方法*/
+        }
+
+        .box1 {
+            width: 400px;
+            background-color: pink;
+        }
+
+        .son1 {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            float: left;
+        }
+
+        .son2 {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            float: right;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 400px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<div class="box1 clearfix">
+    <div class="son1"></div>
+    <div class="son2"></div>
+</div>
+
+<div class="box2"></div>
+</body>
+</html>
