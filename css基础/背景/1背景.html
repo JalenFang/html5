@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <title>1背景</title>
     <style>
+
         div {
             width: 200px;
             height: 300px;
             background-color: pink; /*快捷按键 bgc */
             background-image: url(../../img/liuXiao.jpg); /* 背景图片 bgi*/
+
             /*background-repeat: repeat;*/ /*背景图片是否平铺 bgr  默认是平铺的*/
             /*  background-repeat: repeat-x;*/ /*在x方向平铺*/
             /* background-repeat: repeat-y;*/ /*在Y方向平铺*/
-            /* background-repeat: no-repeat; *//*不平铺*/
+            background-repeat: no-repeat; /*不平铺*/
+
+            /* background-position: right top;*/ /*默认值*/
+            /*background-position: center center;*//*居中*/
+            /* background-position: bottom;*/ /*如果方位名次只写一个 那么另一个默认值是center*/
+            /*background-position: 10px 10px;*/ /*指定精确的坐标*/
+
+            /*也可以混搭
+             center 10px 水平居中 垂直方向10px
+              10px center 水平方向10px 垂直方向居中
+             */
+            background-position: center 10px;
+
+           /* 背景附着 scroll(背景随着滚动而滚动)   fixed(背景随着滚动而静止)*/
+          /*  background-attachment: fixed;*/
         }
     </style>
 </head>

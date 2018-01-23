@@ -1,0 +1,10 @@
+1.平铺 background-repeat  他有四个属性 repeat no-repeat repeat-x repeat-y  默认值是:repeat
+2.位置 background-position 有top bottom  center right left 默认值是 left top 方位名次没有顺序 谁在前谁在后没关系
+如果方位名次只写一个 那么另一个默认值是center   也可以指定精确的坐标(这个在精灵图里面使用)
+也可以混搭
+center 10px 水平居中 垂直方向10px
+10px center 水平方向10px 垂直方向居中
+3. background-attachment 背景附着 scroll(背景随着滚动而滚动)   fixed(背景随着滚动而静止)
+4.background的简写并没有明确的规定
+但是通常是这样写的   background: 背景颜色 背景图片地址 背景平铺 背景滚动 背景位置;
+5.背景半透明  background: rgba(0, 0, 0, 0.7);
