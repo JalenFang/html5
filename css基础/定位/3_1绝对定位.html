@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 100px;
+            position: relative; /*子绝父相*/
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            position: absolute;  /*如果父亲没有定位 那么定位已浏览器为基准来对齐的
+            如果父亲有定位 那么定位以父亲为基准来对齐的
+            */
+            top: 15px;
+            left: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>
