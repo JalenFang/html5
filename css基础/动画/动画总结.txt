@@ -5,8 +5,13 @@ transform: translateX(50px); /*x轴方向移动50px*/
 transform: translate(0,50px); /*y轴方向移动50px*/
 transform: translateY(50px); /*y轴方向移动50px*/
 transform: translateX(50%);/*移动自己宽度的一半*/
+
 transform: translateZ(100px); /*Z轴方向平移100px*/
 Z轴方向需要增加透视 否则变化不明显  根据坐标系 Z轴有屏幕向我们的方向，值越大
+
+transform:translate3d(100px,100px,100px)
+3d平移
+
 2.缩放
 transform: scale(1.2, 1.5); X轴缩放1.2倍 Y轴缩放1.5倍
 transform:scaleX(1.2);  X轴缩放1.2倍
