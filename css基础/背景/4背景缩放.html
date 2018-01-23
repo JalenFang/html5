@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景缩放</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        div {
+            width: 300px;
+            height: 400px;
+            background: pink url("../../img/liuXiao.jpg") no-repeat;
+            /* 背景图片设置大小使用的是 background-size*/
+            /*background-size: 宽度 高度;*/
+
+            /* background-size: 100px;*/ /*一个值只改宽度 高度等比例缩放 我们尽量只改一个值 防止失真*/
+
+            /* background-size: 50%;*/ /*把背景图片缩放到原来的一半*/
+
+            background-size: cover; /*图片进行等比例缩放 图片一定要保证宽度和高度同事满足盒子的大小
+        势必会有部分超出去 看不见*/
+          /*  background-size: contain;*/  /*在缩放的时候 宽度或者高度有一个和盒子一样大就不在缩放
+            这样做的好处，保证了图片的完整性，但是背景会有部分裸露。 在开发中常用的是cover*/
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -8,3 +8,16 @@ center 10px 水平居中 垂直方向10px
 4.background的简写并没有明确的规定
 但是通常是这样写的   background: 背景颜色 背景图片地址 背景平铺 背景滚动 背景位置;
 5.背景半透明  background: rgba(0, 0, 0, 0.7);
+6.背景缩放
+background-size: 宽度 高度;
+background-size: 100px; 一个值只改宽度 高度等比例缩放 我们尽量只改一个值 防止失真
+background-size: 50%;   把背景图片缩放到原来的一半
+background-size: cover;图片进行等比例缩放 图片一定要保证宽度和高度同事满足盒子的大小
+势必会有部分超出去 看不见
+background-size: contain;  在缩放的时候 宽度或者高度有一个和盒子一样大就不在缩放
+这样做的好处，保证了图片的完整性，但是背景会有部分裸露。 在开发中常用的是cover
+7.多图片背景
+  background: url("../../img/liuXiao.jpg") no-repeat left top,
+pink  url("../../img/liuXiao.jpg") no-repeat right bottom;
+多个背景图片之间用逗号隔开
+背景颜色要放到后面 否则会被遮住
