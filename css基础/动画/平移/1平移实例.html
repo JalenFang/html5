@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <title>平移实例</title>
     <style>
+
+        body {
+           /* perspective: 300px;*/
+        }
+
         div {
             width: 100px;
             height: 100px;
             background-color: pink;
             transition: all 0.5s; /*过渡*/
+            margin: 100px auto;
         }
 
         div:active { /*鼠标点击没有松开鼠标的状态*/
@@ -17,7 +23,8 @@
             /*transform: translate(50px);*/ /*x轴方向移动50px*/
             /*transform: translateX(50px); *//*x轴方向移动50px*/
             /*transform: translateY(50px);*/ /*y轴方向移动50px*/
-            transform: translateX(50%);/*移动自己宽度的一半*/
+            /* transform: translateX(50%);*//*移动自己宽度的一半*/
+            transform: translateZ(100px); /*Z轴方向平移100px*/
         }
 
     </style>
