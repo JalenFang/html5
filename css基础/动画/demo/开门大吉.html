@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开门大吉</title>
+    <style>
+        .section {
+            width: 500px;
+            height: 500px;
+            background: url("../../../img/liuXiao.jpg") repeat;
+            background-size: cover;
+            margin: 100px auto;
+            position: relative;
+            perspective: 1000px;/*透视 增加立体感*/
+        }
+
+        .door-l, .door-r {
+            width: 50%;
+            height: 100%;
+            background-color: hotpink;
+            position: absolute;
+            border: 1px solid black;
+            transition: all 0.5s;
+        }
+
+        .door-l {
+            left: 0;
+            transform-origin: left;
+        }
+
+        .door-r {
+            right: 0;
+            transform-origin: right;
+        }
+
+        .door-l:before, .door-r:before {
+            width: 20px;
+            height: 20px;
+            content: ""; /*必须添加content 否则显示不出来*/
+            border: 1px solid black;
+            border-radius: 20%;
+            position: absolute;
+            top: 50%; /*距离上面父布局高度的一半*/
+            transform: translateY(-50%); /*向上平移自己高度的一半*/
+        }
+
+        .door-l:before {
+            right: 5px; /*距离右边5px*/
+        }
+
+        .door-r:before {
+            left: 5px; /*距离左边5px*/
+        }
+
+        .section:hover .door-l {
+            transform: rotateY(-135deg); /*向左翻转是负值 向右翻转是正值*/
+        }
+
+        .section:hover .door-r {
+            transform: rotateY(135deg); /*向左翻转是负值 向右翻转是正值*/
+        }
+
+    </style>
+</head>
+<body>
+<div class="section">
+    <div class="door-l"></div>
+    <div class="door-r"></div>
+</div>
+</body>
+</html>
