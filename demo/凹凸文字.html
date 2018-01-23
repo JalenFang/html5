@@ -13,10 +13,17 @@
             color: #ccc;
         }
 
+        /* text-shadow:水平位置 垂直位置 模糊距离 阴影颜色*/
         div:first-child {
-            /*水平位置 垂直位置 模糊距离 阴影颜色*/
-            text-shadow: 1px 1px 1px #000/*,
-            -1px -1px 1px #fff*/;
+            /* 1px 1px 1px #000  增加阴影*/
+            /*  -1px -1px 1px #fff  增加向上的阴影*/
+            text-shadow: 1px 1px 1px #000,
+            -1px -1px 1px #fff;
+        }
+
+        div:last-child {
+            text-shadow: -1px -1px 1px #000,
+            1px 1px 1px #fff;
         }
     </style>
 </head>
