@@ -1,0 +1,6 @@
+1.translate(50px,100px); 在x轴方向移动50px  在y轴方向移动100px
+transform: translate(50px); /*x轴方向移动50px*/
+transform: translateX(50px); /*x轴方向移动50px*/
+transform: translate(0,50px); /*y轴方向移动50px*/
+transform: translateY(50px); /*y轴方向移动50px*/
+transform: translateX(50%);/*移动自己宽度的一半*/

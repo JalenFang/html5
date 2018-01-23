@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>让定位的盒子居中对齐</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+           /* 通过这两个步骤让盒子居中*/
+            left: 50%;/*向右移动父布局宽度的一半*/
+            transform: translateX(-50%); /*向左移动自己布局宽度的一半*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
