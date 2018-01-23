@@ -1,6 +1,20 @@
-1.translate(50px,100px); 在x轴方向移动50px  在y轴方向移动100px
+1.平移
+translate(50px,100px); 在x轴方向移动50px  在y轴方向移动100px
 transform: translate(50px); /*x轴方向移动50px*/
 transform: translateX(50px); /*x轴方向移动50px*/
 transform: translate(0,50px); /*y轴方向移动50px*/
 transform: translateY(50px); /*y轴方向移动50px*/
 transform: translateX(50%);/*移动自己宽度的一半*/
+2.缩放
+transform: scale(1.2, 1.5); X轴缩放1.2倍 Y轴缩放1.5倍
+transform:scaleX(1.2);  X轴缩放1.2倍
+transform:scaleY(1.5);  Y轴缩放1.5倍
+transform: scale(1.2); 宽和高都是原来的1.2倍
+当值设置为0.01到0.99之间，使一个元素缩小
+当值设置为大于1.01，使一个元素放大
+3.旋转
+默认的旋转中心点是中心
+transform: rotate(90deg); 顺时针旋转90度
+transform: rotate(-90deg); 逆时针旋转90度
+transform-origin: right top;/*指定旋转的中心点是右上角*/
+transform-origin: 10px 20px;设置中心点为 x轴10px y轴20px

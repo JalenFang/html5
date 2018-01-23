@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缩放实例</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        div:hover {
+            /*当值设置为0.01到0.09之间，使一个元素缩小
+            当值设置为大于1.01，使一个元素放大*/
+            /* transform: scale(1.2, 1.5); X轴缩放1.2倍 Y轴缩放1.5倍*/
+            /* transform: scale(1.2); 宽和高都是原来的1.2倍*/
+            /* transform:scaleX(1.2);*/ /*X轴缩放1.2倍*/
+            transform: scaleY(1.5); /*Y轴缩放1.5倍*/
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片放大</title>
+    <style>
+        section {
+            width: 173px;
+            height: 220px;
+            margin: 0 auto;
+            overflow: hidden; /*溢出隐藏*/
+        }
+        section img{/*谁做动画谁加过渡*/
+            transition: all 0.5s;
+        }
+        section:hover img {
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+<section>
+    <img src="../../../img/liuXiao.jpg" alt="">
+</section>
+</body>
+</html>
