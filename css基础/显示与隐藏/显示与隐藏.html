@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示与隐藏</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        div:first-child {
+           /* display: none;*/ /*隐藏元素 看不见而已 但是元素还在页面中  不保留位置*/
+           /* visibility: hidden;*//*隐藏元素 看不见而已 但是元素还在页面中  保留位置*/
+            visibility: visible;/*隐藏元素 看不见而已 但是元素还在页面中  保留位置*/
+        }
+
+        div:last-child {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+</body>
+</html>
