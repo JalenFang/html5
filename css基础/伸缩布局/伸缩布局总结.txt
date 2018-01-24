@@ -6,3 +6,18 @@
 3.排列方式
 flex-direction: row;   默认横向排列
 flex-direction: column; 竖向排列
+4.对齐方式
+主轴对齐(X轴)justify-content
+flex-start 默认值,让子元素从父容器的开头开始排序
+flex-end 让子元素从父容器的末尾开始排序
+center  让子元素从父容器的中间显示
+space-between   每个盒子中间都有缝隙 平分空白间距
+space-around    每个盒子左右都有边距 相当于盒子增加左右间距
+
+侧轴对齐(Y轴) align-items
+stretch 子元素的高度拉伸适用父容器（子元素不给高度的情况下）
+center  垂直居中
+flex-start 默认值 垂直对齐开始位置
+flex-end  垂直对齐末尾位置
+
+

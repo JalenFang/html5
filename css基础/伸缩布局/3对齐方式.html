@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对齐方式</title>
+    <style>
+        section {
+            width: 1000px;
+            height: 300px;
+            border: 1px solid red;
+            display: flex; /*伸缩布局*/
+            margin: 100px auto;
+            min-width: 600px; /*指定最小的宽度 不在伸缩*/
+            /*    min-height: 1200px;*/ /*指定最小的高度 不在伸缩*/
+            flex-direction: row; /*默认横向排列*/
+            /* flex-direction: column;*/ /*竖向排列*/
+
+            /* justify-content: flex-start;*/ /*子元素从父容器的开头开始排序*/
+            /* justify-content: flex-end;*/ /*子元素从父容器的末尾开始排序*/
+            /*justify-content: center; *//*让子元素从父容器的中间显示*/
+            /*justify-content: space-between;*/ /*每个盒子中间都有缝隙 平分空白间距*/
+            /*justify-content: space-around;*/ /*每个盒子左右都有边距 相当于盒子增加左右间距*/
+
+            /*align-items:stretch; */ /*子元素的高度拉伸适用父容器（子元素不给高度的情况下）*/
+            /*align-items:center;*/ /*垂直居中*/
+
+           /* align-items: flex-start;*/    /* 默认值 垂直对齐开始位置*/
+            align-items: flex-end;  /*垂直对齐末尾位置*/
+        }
+
+        div {
+            width: 250px;
+            height: 100px;
+        }
+
+        section div:first-child {
+            background-color: pink;
+        }
+
+        section div:nth-child(2) {
+            background-color: purple;
+        }
+
+        section div:last-child {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+
+
+<section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</section>
+</body>
+</html>
