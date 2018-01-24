@@ -29,6 +29,7 @@ transform: rotate(-90deg); 逆时针旋转90度
 transform-origin: right top;指定旋转的中心点是右上角
 transform-origin: left top;指定旋转的中心点是左上角
 transform-origin: right center;指定旋转的中心点是 右边的中点
+transform-origin: left;设置中心点为 左边
 transform-origin: 10px 20px;设置中心点为 x轴10px y轴20px
 transform-origin: right 20px;设置中心点为 右边 y轴坐标20px
 
@@ -48,3 +49,19 @@ perspective属性需要设置给需要有3D效果的标签的父标签
 
 6.细节知识点
 backface-visibility: hidden; /* 不是正面的时候就隐藏 */
+
+7.动画
+定义一个动画  @keyframes 动画名称
+        @keyframes go {
+            from {/*从哪个地方开始*/
+                transform: translateX(0px);
+            }
+
+            to {/*到哪个地方*/
+                transform: translateX(500px);
+            }
+        }
+
+使用动画
+animation: 动画名称 动画持续时间 运动曲线 何时开始 播放次数 是否反方向
+一般情况下，我们只使用前两个 animation: 动画名称 动画持续时间  后面用到的，可以查看css手册
