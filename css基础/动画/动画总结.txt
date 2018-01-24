@@ -19,6 +19,7 @@ transform:scaleY(1.5);  Y轴缩放1.5倍
 transform: scale(1.2); 宽和高都是原来的1.2倍
 当值设置为0.01到0.99之间，使一个元素缩小
 当值设置为大于1.01，使一个元素放大
+
 3.旋转
 默认的旋转中心点是盒子的中心
 transform: rotate(90deg); 顺时针旋转90度
@@ -34,11 +35,16 @@ transform-origin: right 20px;设置中心点为 右边 y轴坐标20px
 transform: rotateX(180deg); 沿着X轴旋转180度
 transform: rotateY(180deg);沿着Y轴旋转180度
 transform: rotateZ(180deg);沿着Z轴旋转180度
+
 4.倾斜
 transform: skew(10deg);沿着X轴方向倾斜10度
 transform:skew(10deg,10deg); x轴方向倾斜10度 y轴方向倾斜10度
 transform: skewX(10deg);沿着X轴方向倾斜10度
 transform: skewY(10deg);沿着Y轴方向倾斜10度
+
 5.透视
 perspective: 300px;/*视距越小 越有立体感*/
 perspective属性需要设置给需要有3D效果的标签的父标签
+
+6.细节知识点
+backface-visibility: hidden; /* 不是正面的时候就隐藏 */
