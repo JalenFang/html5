@@ -1,0 +1,8 @@
+1.伸缩布局
+宽度可以伸缩的话
+父盒子不能指定具体的宽度，但是需要指定 display: flex; min-width指定最小的宽度 不在伸缩  max-width指定最小的宽度 不在伸缩
+子盒子需要指定自己所占的比例  flex: 1;  flex为1 表示占一份
+2.并不是每个盒子都需要指定flex，如果他指定宽度了，那么别的盒子分的宽度，从总宽度减去指定宽度
+3.排列方式
+flex-direction: row;   默认横向排列
+flex-direction: column; 竖向排列
