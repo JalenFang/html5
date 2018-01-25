@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>面向对象实例</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+    function DivTag() {
+        this.DOM = document.createElement('div');
+        this.style = function (option) {
+            for (var temp in option) {
+                this.DOM.style[temp] = option[temp];
+            }
+            return this;
+        };
+
+        this.appendTo = function (node) {
+            node.appendChild(this.DOM);
+            return this;
+        }
+    }
+
+    new DivTag().appendTo(document.body).style({
+        'border': '5px solid pink',
+        'width': '400px',
+        'height': '200px',
+        'backgroundColor': 'green'
+    });
+</script>
+</html>
